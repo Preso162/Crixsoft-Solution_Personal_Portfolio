@@ -1,0 +1,12 @@
+  /* Contact Section */
+  .contact-section form div input,
+  textarea {
+    width: 100%;
+  }
+ .card{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    width: auto;
+    height: auto;
+  }
