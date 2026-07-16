@@ -1,171 +1,226 @@
-/* Navbar + Header Section */
-
-#navbar{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 40px;
-  background:rgba(2,6,23,.75);
-  backdrop-filter: blur(10px) saturate(150%);
-  transition: 0.3s;
+/*Navbar Section*/
+.navbar{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 18px 60px;
+background:#020617;
+backdrop-filter: blur(10px) saturate(150%);
+transition: 0.3s ease;
 }
 
-#navbar.scrolled {
- box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.35);
+.navbar.scrolled {
+box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.35);
 }
 
 .mynavbar {
-  background-color: #020617;
-  padding: 1px 0;
+background-color: #FB923C;
+padding: 1px 0;
 }
 
-#Navitems {
-  list-style: none;
-  display: flex;
-  gap: 10px;
-  max-height: 0px;
-  transition: max-height 0.3s ease-out;
+.navitems {
+list-style: none;
+display: flex;
+gap: 10px;
+max-height: 0px;
+transition: max-height 0.3s ease-out;
 }
 
-#Navitems li {
-  display: inline-block;
-  padding: 2rem;
+.navitems li {
+display: inline-block;
+padding: 2rem;
 }
 
 /* Button-style links */
 .nav-btn {
-  text-decoration: none;
-  width: 5.9em;
-  position: relative;
-  height: 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 3px ridge #ea7414;
-  outline: none;
-  background-color: transparent;
-  color: whitesmoke;
-  border-radius: 1em;
-  font-size: 16px;
-  font-weight: bold;
-  overflow: hidden;
-  transition: .3s;
+text-decoration: none;
+min-width: 110px;
+padding:.8rem 1.5rem;
+position: relative;
+height: 3rem;
+display: flex;
+align-items: center;
+justify-content: center;
+border: 3px ridge rgba(255,255,255,.08);
+outline: none;
+background-color: transparent;
+color: #FB923C;
+border-radius: 1em;
+font-size: 16px;
+font-weight: bold;
+overflow: hidden;
+transition: .3s ease;
 }
 
 .nav-btn.active{
-  background: #ea7414;
-  color: white;
-  box-shadow: 0 0 25px rgba(234, 116, 20, 0.0);
+  background: #020617;
+  color: #F8FAFC;
+}
+
+.btn,
+.nav-btn{
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        background .3s ease,
+        color .3s ease;
+}
+
+.btn:hover,
+.nav-btn:hover{
+    transform:translateY(-4px);
+    box-shadow:
+        0 12px 30px rgba(249,115,22,.25);
+}
+
+.nav-btn.active{
+  background: #F97316;
+  color: #F8FAFC;
 }
 
 /* Top overlay */
 .nav-btn::after {
-  content: "";
-  position: absolute;
-  top: -10px;
-  left: 3%;
-  width: 95%;
-  height: 40%;
-  background-color: #020617;
-  transition: 0.5s;
-  transform-origin: center;
+content: "";
+position: absolute;
+top: -10px;
+left: 3%;
+width: 95%;
+height: 40%;
+background-color: #020617;
+transition: 0.5s ease;
+transform-origin: center;
 }
 
 /* Bottom overlay */
 .nav-btn::before {
-  content: "";
-  position: absolute;
-  top: 80%;
-  left: 3%;
-  width: 95%;
-  height: 40%;
-  background-color: #020617;
-  transition: 0.5s;
-  transform-origin: center;
+content: "";
+position: absolute;
+top: 80%;
+left: 3%;
+width: 95%;
+height: 40%;
+background-color: #020617;
+transition: 0.5s ease;
+transform-origin: center;
 }
 
 /* Hover animation */
 .nav-btn:hover::before,
 .nav-btn:hover::after {
-  transform: scale(0);
+transform: scale(0);
 }
 
 .nav-btn:hover {
-  box-shadow: inset 0px 0px 25px #ea9414;
+box-shadow: inset 0px 0px 25px #ea9414;
 }
 
 .hamburger {
-  cursor: pointer;
-  position: absolute;
+cursor: pointer;
+position: absolute;
+display: none;
 }
 
 .hamburger input {
-  display: none;
+display: none;
 }
 
 .hamburger svg {
-  /* The size of the SVG defines the overall size */
-  height: 3rem;
-  /* Define the transition for transforming the SVG */
-  transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+/* The size of the SVG defines the overall size */
+height: 3rem;
+/* Define the transition for transforming the SVG */
+transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .line {
-  fill: none;
-  stroke: #f97316;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 3;
-  /* Define the transition for transforming the Stroke */
-  transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
-              stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+fill: none;
+stroke-linecap: round;
+stroke-linejoin: round;
+stroke-width: 3;
+/* Define the transition for transforming the Stroke */
+transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+            stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .line-top-bottom {
-  stroke-dasharray: 12 63;
+stroke-dasharray: 12 63;
 }
 
 .hamburger input:checked + svg {
-  transform: rotate(-45deg);
+transform: rotate(-45deg);
 }
 
 .hamburger input:checked + svg .line-top-bottom {
-  stroke-dasharray: 20 300;
-  stroke-dashoffset: -32.42;
+stroke-dasharray: 20 300;
+stroke-dashoffset: -32.42;
 }
 
 header{
-  position: relative;
+  position: sticky;
   top: 0;
   z-index: 1000;
+  background: #020617;
+  backdrop-filter: blur(12px);
+  transition: 0.3s ease;
 }
 
-.logo {
-  color: #ea7414;
-  font-size: 24px;
-  font-weight:600;
-  letter-spacing: 2px;
-  padding-left: 6rem;
-   text-shadow:
-    0px 0px 5px #00ffff,
-    0px 0px 10px #00ffff,
-    0px 0px 20px #00ffff,
-    0px 0px 40px #00ccff;
+header.scrolled{
+  box-shadow: 0 10px 25px rgba(0,0,0,.35);
 }
 
 .navbar ul li {
-  margin: 1rem;
-  padding: 1rem;
+margin: 1rem;
+padding: 1rem;
 }
 
 .navbar ul li a {
-  color: #f97316;
-  text-decoration: none;
-  font-weight: 900;
-  transition: all 0.3s ease 0s;
+text-decoration: none;
+font-weight: 900;
+transition: 0.3s ease 0s;
 }
 
 .navbar ul li a:hover {
-  color: #f1f5f9;
-  transition: all 0.3s ease 0s;
+transition: 0.3s ease 0s;
 }
+
+/*Brand*/
+.logo a{
+  display:flex;
+  align-items:center;
+  gap:.1rem;
+  text-decoration:none;
+  font-family:var(--font-heading);
+  font-size:2rem;
+  font-weight:700;
+  cursor: pointer;
+}
+
+.logo img{
+  width:68px;
+  height:68px;
+  border-radius:50%;
+  padding:4px;
+  background:rgba(255,255,255,.08);
+  backdrop-filter:blur(10px);
+  border:1px solid rgba(255,255,255,.15);
+}
+
+.logo img:hover{
+  transform:scale(1.08) rotate(3deg);
+  border-color:var(--clr-primary);
+  box-shadow:
+      0 0 18px rgba(249,115,22,.35),
+      0 15px 35px rgba(0,0,0,.35);
+}
+
+/* Tablet and Mobile Styles */
+@media screen and (max-width: 768px) {
+.mynavbar {
+  display: none; /* Hide full menu */
+}
+
+header {
+  flex-direction: column;
+  align-items: flex-start;
+  margin: auto;
+  color: #020617;
+}}
