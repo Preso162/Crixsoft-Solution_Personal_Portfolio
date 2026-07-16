@@ -153,7 +153,7 @@ This project follows accessibility best practices by including:
 
 ---
 
-## 👨‍💻 Author
+## Author
 
 ### Presley Tempies
 
