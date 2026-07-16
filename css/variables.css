@@ -1,13 +1,159 @@
+/*======================================
+  DESIGN SYSTEM
+======================================*/
 :root{
+/*======================================
+  COLORS
+======================================*/
+--clr-primary:#f97316;
+--clr-primary-hover:#ea580c;
 
---primary:#ea7414;
+--clr-secondary:#38bdf8;
 
---dark:#020617;
+--clr-dark:#020617;
+--clr-surface:#0f172a;
+--clr-surface-light:#1e293b;
 
---white:#ffffff;
+--clr-white:#ffffff;
+--clr-text:#f8fafc;
+--clr-muted:#94a3b8;
 
---radius:20px;
+--clr-success:#22c55e;
+--clr-warning:#facc15;
+--clr-danger:#ef4444;
 
---transition:.3s ease;
+/*======================================
+  TYPOGRAPHY
+======================================*/
+--font-heading:"Poppins",sans-serif;
+--font-body:"Roboto",sans-serif;
 
+--fs-xs:.75rem;
+--fs-sm:.875rem;
+--fs-md:1rem;
+--fs-lg:1.25rem;
+--fs-xl:1.75rem;
+--fs-2xl:2.5rem;
+--fs-hero:4rem;
+
+/*======================================
+  FONT WEIGHTS
+======================================*/
+--fw-light:300;
+--fw-normal:400;
+--fw-medium:500;
+--fw-bold:700;
+
+/*======================================
+  SPACING
+======================================*/
+--space-xs:.5rem;
+--space-sm:1rem;
+--space-md:2rem;
+--space-lg:4rem;
+--space-xl:6rem;
+--space-2xl:8rem;
+
+/*======================================
+  BORDER RADIUS
+======================================*/
+--radius-sm:8px;
+--radius-md:16px;
+--radius-lg:24px;
+--radius-xl:40px;
+--radius-round:50%;
+
+/*======================================
+  SHADOWS
+======================================*/
+--shadow-sm:0 5px 10px rgba(0,0,0,.12);
+--shadow-md:0 15px 30px rgba(0,0,0,.18);
+--shadow-lg:0 25px 60px rgba(0,0,0,.30);
+
+/*======================================
+  TRANSITIONS
+======================================*/
+--transition-fast:.25s ease;
+--transition-normal:.35s ease;
+--transition-slow:.55s ease;
+
+/*======================================
+  CONTAINER
+======================================*/
+--container-width:1200px;
+}
+
+/*======================================
+  RESET
+======================================*/
+
+*,
+*::before,
+*::after{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+font-family:var(--font-body);
+background:var(--clr-dark);
+color:var(--clr-text);
+line-height:1.6;
+overflow-x:hidden;
+}
+
+img{
+max-width:100%;
+display:block;
+}
+
+a{
+text-decoration:none;
+color:inherit;
+}
+
+ul{
+list-style:none;
+}
+
+/*======================================
+  Buttons
+======================================*/
+button{
+font:inherit;
+cursor:pointer;
+border:none;
+background:none;
+}
+
+.btn{
+display:inline-flex;
+align-items:center;
+justify-content:center;
+padding:1rem 2rem;
+border-radius:var(--radius-md);
+background:var(--clr-primary);
+color:var(--clr-white);
+font-weight:var(--fw-bold);
+transition:var(--transition-fast);
+box-shadow:var(--shadow-sm);
+}
+
+.btn:hover{
+background:var(--clr-primary-hover);
+transform:translateY(-3px);
+box-shadow:var(--shadow-md);
+}
+/*======================================
+  Container
+======================================*/
+
+.container{
+width:min(90%,var(--container-width));
+margin-inline:auto;
 }
