@@ -1,0 +1,55 @@
+/*Statistics Section*/
+.stats-section{
+    padding:100px 8%;
+}
+
+.stats-grid{
+    display:grid;
+    grid-template-columns:
+    repeat(auto-fit,minmax(220px,1fr));
+    gap:30px;
+    margin-top:60px;
+}
+
+.stat-card{
+    background:#020617;
+    border:1px solid rgba(255,255,255,.08);
+    border-radius:20px;
+    padding:40px;
+    text-align:center;
+    transition:.35s ease;
+}
+
+.stat-card:hover{
+    transform:translateY(-10px);
+    box-shadow:0 0 30px rgba(249,115,22,.25);
+}
+
+.stat-card i{
+    font-size:2.5rem;
+    color:#F97316;
+    margin-bottom:20px;
+}
+
+.counter{
+    font-size:3rem;
+    color:#fff;
+    margin-bottom:10px;
+}
+
+.stat-card p{
+    color:#cbd5e1;
+}
+
+.stat-card i{
+  transition:.35s;
+}
+
+.stat-card:hover i{
+  transform:rotate(12deg);
+}
+
+.counter{
+  color:#fff;
+  text-shadow:0 0 15px rgba(249,115,22,.4);
+}
