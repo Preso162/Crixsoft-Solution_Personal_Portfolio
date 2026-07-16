@@ -3,173 +3,192 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preso.dev</title>
+    <title>Presley Tempies | Frontend Developer | Java Developer</title>
+    <meta name="description" content="Portfolio of Presley Tempies, Frontend Developer specialising in HTML, CSS, JavaScript and Java.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://kit.fontawesome.com/22558ed83e.js" crossorigin="anonymous"></script>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon-180x180.png">
+    <link rel="icon" type="images/favicon" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="images/favicon" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel ="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
   </head>
-  <body>
-  <header>
 
- <nav>
-      <div id="navbar">
-        <div class="logo">
-          <h2><a href="https://github.com/Preso162" target="_blank">Preso.dev</a></h2>
+  <body>
+    <!--Progress Bar-->
+    <div id="react-bar">
+    </div>
+    <div class="scroll-progress">
+    </div>
+
+  <header class="site-header">
+    <nav class=" navbar container" aria-label="Primary Navigation">
+      <div class="logo">
+             <a href="index.html">
+                <img src="images/Logo.webp" loading="lazy"
+                decoding="async"
+                alt="Preso.dev Logo"
+                width="160"
+                height="60">
+            </a>
         </div>
 
-        <label class="hamburger">
-          <input type="checkbox" id="menuToggle">
-          <svg viewBox="0 0 32 32">
-              <path class="line line-top-bottom"
-              d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
-              </path>
-              <path class="line"
-              d="M7 16 27 16">
-              </path>
-          </svg>
-        </label>
-
-        <ul id="navitems">
+        <ul class="navitems">
             <li><a href="index.html" class="nav-btn active">Home</a></li>
             <li><a href="About.html" class="nav-btn">About</a></li>
             <li><a href="Projects.html" class="nav-btn">Projects</a></li>
             <li><a href="Contact.html" class="nav-btn">Contact</a></li>
         </ul>
-      </div>
     </nav>
+  </header>
 
-</header>
-  <main>
-
+<main>
     <!--Contact Section-->
-    <section class="contact-section" id="contact">
-      <div class = "Contact">
-      <h2>
-        <span>Contact Me</span>
-      </h2>
-      <p>Let’s Create Something Great Together.</p>
-      <p>Whether you’re looking to build a new website, improve an existing design,<br>
-      or collaborate on a digital project. I'm ready to help bring your vision to life.</p>
-      <p>I'm currently open to:
-        <ul>
-          <li>✔ Freelance Projects</li>
-          <li>✔ Web Design & Development Contracts</li>
-          <li>✔ Full‑Time UI/Front‑End Opportunities</li>
-      </ul>
-      </p>
-      <br>
-      <p>Reach out anytime! I’d love to connect.</p>
-      <br>
-      </div>
-        <div class="form-card1">
-          <div class="form-card2">
-            <form class="form">
-              <p class="form-heading">Get In Touch</p>
+    <section class="contact-hero hidden">
+        <span class="section-tag">Get In Touch</span>
+        <h1> Let's Build Something Amazing Together</h1>
+        <p> Whether you're looking for a frontend developer, have an exciting project in mind, or simply want
+            to connect, I'd love to hear from you.</p>
 
-              <div class="form-field">
-                <input required="" placeholder="Name" class="input-field" type="text" />
-              </div>
-
-              <div class="form-field">
-                <input
-                  required=""
-                  placeholder="Email"
-                  class="input-field"
-                  type="email"
-                />
-              </div>
-
-              <div class="form-field">
-                <input
-                  required=""
-                  placeholder="Subject"
-                  class="input-field"
-                  type="text"
-                />
-              </div>
-
-              <div class="form-field">
-                <textarea
-                  required=""
-                  placeholder="Message"
-                  cols="30"
-                  rows="3"
-                  class="input-field"
-                ></textarea>
-              </div>
-
-              <button class="sendMessage-btn">Send Message</button>
-            </form>
-          </div>
-        </div>
-      </div>
+        <span class="section-tag"> Let's Connect</span>
+        <h1> I'd Love to Hear From You</h1>
+        <p> Whether you're looking for a frontend developer, have a project in mind, or simply want to connect
+            with a fellow tech enthusiast, my inbox is always open. Let's create something meaningful together.</p>
     </section>
-  </main>
-    <footer>
-    <hr>
-    <br>
-      Copyright &copy; 2025 All Rights Reserved
-      <a href="https://github.com/Preso162" target="_blank">Presley Tempies</a> - Powered by Caution162
-        <br>
-   <div class = "media-login-mod">
-        <div class = "mediacontainer">
-          <div class = "mod media-mod-1-1">
-            <a href="https://www.linkedin.com/in/presley-tempies-167795125/">
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
-        </div>
 
-            <div class = "mod media-mod-1">
-              <i class="fa-brands fa-linkedin"></i>
+    <section class="contact-section hidden">
+        <div class="form-card1">
+            <div class="form-card2">
+                <form class="form">
+                <p class="form-heading">Get In Touch</p>
+
+                <div class="form-field">
+                    <input required="" placeholder="Name" class="input-field" type="text" />
+                </div>
+
+                <div class="form-field">
+                    <input
+                    required=""
+                    placeholder="Email"
+                    class="input-field"
+                    type="email"
+                    />
+                </div>
+
+                <div class="form-field">
+                    <input
+                    required=""
+                    placeholder="Subject"
+                    class="input-field"
+                    type="text"
+                    />
+                </div>
+
+                <div class="form-field">
+                    <textarea
+                    required=""
+                    placeholder="Message"
+                    cols="30"
+                    rows="3"
+                    class="input-field"
+                    ></textarea>
+                </div>
+
+                <button class="sendMessage-btn">Send Message</button>
+                </form>
             </div>
-          </div>
-        
-        <div class = "mediacontainer">
-          <div class = "mod media-mod-2-2">
-            <a href="https://www.instagram.com/preso162/">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-          </div>
-
-            <div class = "mod media-mod-2">
-              <i class="fa-brands fa-instagram"></i>
-            </div>
-          </div>
-
-        <div class = "mediacontainer">
-          <div class = "mod media-mod-3-3">
-            <a href = "https://www.facebook.com/preso162">
-              <i class="fa-brands fa-facebook"></i>
-            </a>
-          </div>
-
-          <div class = "mod media-mod-3">
-            <i class="fa-brands fa-facebook"></i>
-          </div>
         </div>
 
-        <div class = "mediacontainer">
-          <div class = "mod media-mod-4-4">
-            <a href = "https://github.com/Preso162/">
-              <i class="fa-brands fa-github"></i>
-            </a>
-          </div>
+        <div class="contact-info">
+        <article class="contact-card">
+            <i class="fa-brands fa-linkedin"></i>
+            <h3>LinkedIn</h3>
+            <a href="https://www.linkedin.com/in/presley-tempies-167795125/" target=_blank>Connect with me</a>
+        </article>
 
-        <div class = "mod media-mod-4">
-          <i class="fa-brands fa-github"></i>
-        </div>
-      </div>
+        <article class="contact-card">
+            <i class="fa-solid fa-envelope"></i>
+            <h3>Email</h3>
+            <a href="mailto:presatempies@gmail.com"> presatempies@gmail.com</a>
+        </article>
+
+        <article class="contact-card">
+            <i class="fab fa-whatsapp"></i>
+            <h3>WhatsApp</h3>
+            <a href="https://wa.me" target="_blank" rel="noopener noreferrer">Chat with me on WhatsApp!</a>
+        </article>
+
+        <article class="contact-card">
+            <i class="fa-brands fa-github"></i>
+            <h3>GitHub</h3>
+            <a href="https://github.com/Preso162"
+                target="_blank" rel="noopener noreferrer">
+                View my repositories
+            </a>
+        </article>
     </div>
+    </section>
 
-  </footer>
+    <section class="contact-ending">
+        <h2> Thank You for Visiting Preso.dev</h2>
+        <p>Every great collaboration starts with a conversation. 
+        I look forward to hearing from you.</p>
+    </section>
+</main>
+<!--Footer Section-->
+ <footer>
+    <div class="footer-container">
+        <div class="footer-brand">
+            <img src="images/Logo.webp" loading="lazy"
+            decoding="async"
+                alt="Preso.dev Logo">
+        </div>
+        
+         <div class="footer-links">
+            <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="Projects.html">Projects</a>
+                <a href="About.html">About</a>
+                <a href="Contact.html">Contact</a>
+        </div>
+            <div class="brand-text">
+                <h2>Preso.dev</h2>
+                <p> Building responsive, modern and accessible web applications.</p>
+            </div>
+        </div>
+
+<!-- Social icons -->
+    <div class="footer-social">
+        <h3>Connect</h3>
+        <div class = "social-links">
+            <a href="https://www.linkedin.com/in/presley-tempies-167795125/" target="_blank"
+            rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+        
+            <a href="https://www.instagram.com/preso162/" target="_blank"
+            rel="noopener noreferrer">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="https://www.facebook.com/preso162" target="_blank"
+            rel="noopener noreferrer">
+                <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+            </a>
+
+            <a href="https://github.com/Preso162/" target="_blank"
+            rel="noopener noreferrer">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
+    <hr>
+    <p class="copyright"> © 2026 Presley Tempies</p>
+</footer>
     <script src="js/script.js"></script>
   </body>
 </html>
