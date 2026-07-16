@@ -3,69 +3,61 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preso.dev</title>
+    <title>Presley Tempies | Frontend Developer | Java Developer</title>
+    <meta name="description" content="Portfolio of Presley Tempies, Frontend Developer specialising in HTML, CSS, JavaScript and Java.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://kit.fontawesome.com/22558ed83e.js" crossorigin="anonymous"></script>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon-180x180.png">
+    <link rel="icon" type="images/favicon" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="images/favicon" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
     <link rel ="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
   </head>
 
   <body>
+    <!--Progress Bar-->
+    <div id="react-bar">
+    </div>
+    <div class="scroll-progress">
+    </div>
 
-  <header>
-
- <nav>
-      <div id="navbar">
-        <div class="logo">
-          <h2><a href="https://github.com/Preso162" target="_blank">Preso.dev</a></h2>
+  <header class="site-header">
+    <nav class=" navbar container">
+      <div class="logo">
+             <a href="index.html">
+                <img src="images/Logo.webp" loading="lazy"
+                decoding="async"
+                alt="Preso.dev home"
+                width:160
+                height60>
+            </a>
         </div>
 
-        <label class="hamburger">
-          <input type="checkbox" id="menuToggle">
-          <svg viewBox="0 0 32 32">
-              <path class="line line-top-bottom"
-              d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
-              </path>
-              <path class="line"
-              d="M7 16 27 16">
-              </path>
-          </svg>
-        </label>
-
-        <ul id="navitems">
+        <ul class="navitems">
             <li><a href="index.html" class="nav-btn active">Home</a></li>
             <li><a href="About.html" class="nav-btn">About</a></li>
             <li><a href="Projects.html" class="nav-btn">Projects</a></li>
             <li><a href="Contact.html" class="nav-btn">Contact</a></li>
         </ul>
-      </div>
     </nav>
+  </header>
 
 <!--Hero Section -->
-<section class="about hidden">
-  </header>
-    <section class="hero-section">
-
+<main>
+  <section class="hero-section">
       <div class="hero-content">
           <p class="greeting">Hello, I'm</p>
           <h1>Presley Tempies</h1>
-          <h2> I'm a Frontend Developer
+          <h2> I'm a
             <span id="typing"></span>
           </h2>
-
-          <p class="hero-description">
-              I build responsive, accessible and scalable web
-              applications using modern web technologies and
-              clean, maintainable code.
+          <p class="hero-description">I build responsive, accessible and scalable web applications using 
+            modern web technologies and clean, maintainable code.
           </p>
-
           <div class="tech-stack">
               <span>HTML5</span>
               <span>CSS3</span>
@@ -74,122 +66,263 @@
               <span>Git</span>
               <span>Responsive Design</span>
           </div>
-
+          <br>
           <div class="hero-buttons">
-              <a href="css/CV/Presley Tempies CV.pdf"class="btn" download>
-                  Download CV
+              <a href="CV/Presley Tempies CV.pdf"class="btn" download>
+                  Download Resume
               </a>
 
-              <a href="Projects.html" class="btn btn-outline">View Projects
+              <a href="Projects.html" class="btn btn-outline">Explore my Work
               </a>
           </div>
 
-          <ul class="social-icons">
-              <li><a href="https://github.com/Preso162" target="_blank"><i class="fab fa-github"></i></a></li>
-              <li><a href="https://www.linkedin.com/in/presley-tempies-167795125/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-              <li><a href="https://www.facebook.com/preso162" target="_blank"><i class="fab fa-facebook"></i></a></li>
-              <li><a href="https://www.instagram.com/preso162/" target="_blank"><i class="fab fa-instagram"></i></a></li>
-          </ul>
-      </div>
-
+        <div class="status-badge">
+            🟢 Available for Opportunities
+        </div>
+        
       <div class="hero-image">
-          <img src="css/images/Presley.png"
+          <img src="images/Presley.png" loading="lazy"
+          decoding="async"
               alt="Portrait of Presley Tempies">
       </div>
+
+      <div> 
+        <ul class="social-icons">
+            <li>
+              <a href="https://github.com/Preso162" target="_blank" aria-label="Github Profile"
+              rel="noopener noreferrer">
+                <i class="fab fa-github" aria-hidden="true"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.linkedin.com/in/presley-tempies-167795125/" target="_blank"
+              rel="noopener noreferrer">
+                <i class="fab fa-linkedin" aria-hidden="true"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.facebook.com/preso162" target="_blank"
+              rel="noopener noreferrer">
+                <i class="fab fa-facebook" aria-hidden="true"></i>
+              </a>
+            </li>
+
+            <li>
+              <a href="https://www.instagram.com/preso162/" target="_blank"
+              rel="noopener noreferrer">
+                <i class="fab fa-instagram" aria-hidden="true"></i>
+              </a>
+            </li>
+        </ul>
+      </div>
   </section>
-  <section class="projects-section" id="projects">
 
-    <div class="section-heading">
-
-        <h2>Featured Projects</h2>
-        <p>
-            Here are some projects that demonstrate my passion
-            for software development and problem-solving.
-        </p>
-    </div>
-
-<section class="developer-dashboard hidden">
+  <!-- Developer Dashboard -->
+  <section class="developer-dashboard hidden">
     <h2>Developer Dashboard</h2>
       <div class="dashboard-grid">
         <article class="dashboard-card">
             <h3>Tech Stack</h3>
-            <ul>
-                <li>HTML5</li>
-                <li>CSS3</li>
-                <li>JavaScript</li>
-                <li>Java</li>
-                <li>Git & GitHub</li>
-            </ul>
+              <ul>
+                  <li>HTML5</li>
+                  <li>CSS3</li>
+                  <li>JavaScript</li>
+                  <li>Java</li>
+                  <li>Git & GitHub</li>
+              </ul>
         </article>
 
         <article class="dashboard-card">
             <h3>Currently Learning</h3>
-            <ul>
-                <li>Responsive Design</li>
-                <li>Accessibility</li>
-                <li>React</li>
-                <li>Modern JavaScript</li>
-            </ul>
+              <ul>
+                  <li>Responsive Design</li>
+                  <li>Accessibility</li>
+                  <li>React</li>
+                  <li>Modern JavaScript</li>
+              </ul>
         </article>
 
         <article class="dashboard-card">
             <h3>Achievements</h3>
-            <ul>
-                <li>HCIT Graduate</li>
-                <li>Web Development Intern</li>
-                <li>15+ Years at MTN</li>
-            </ul>
+              <ul>
+                  <li>HCIT Graduate</li>
+                  <li>Web Development Intern</li>
+                  <li>15+ Years at MTN</li>
+              </ul>
         </article>
 
-        <article class="dashboard-card">
-            <h3>Development Style</h3>
-            <p>
-                I enjoy building responsive,
-                accessible and user-friendly
-                applications while continually
-                improving my skills.
-            </p>
-        </article>
       </div>
+  </section>
+
+ <!--Skills Section-->     
+<section class="skills-section hidden">
+    <div class="section-heading">
+        <h2>My Skills</h2>
+        <p> These are the technologies and tools I use to build modern,responsive 
+            and user-friendly applications.</p>
+    </div>
+
+    <div class="skills-container">
+        <div class="skill">
+            <div class="skill-info">
+                <span>HTML5</span>
+                <span>90%</span>
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress html"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-info">
+                <span>CSS3</span>
+                <span>85%</span>
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress css"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-info">
+                <span>JavaScript</span>
+                <span>75%</span>
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress javascript"></div>
+            </div>
+
+        </div>
+
+        <div class="skill">
+            <div class="skill-info">
+                <span>Java</span>
+                <span>70%</span>
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress java"></div>
+            </div>
+        </div>
+
+        <div class="skill">
+            <div class="skill-info">
+                <span>Git & GitHub</span>
+                <span>80%</span>
+            </div>
+
+            <div class="progress-bar">
+                <div class="progress git"></div>
+            </div>
+
+        </div>
+    </div>
 </section>
 
-      <div class="projects-grid">
-          <!-- Card 1 -->
-          <article class="project-card">
-              <img src="images/portfolio-preview.jpg"
-                  alt="Portfolio Website">
-              <div class="project-content">
+<!--Statistics Section-->
+<section class="stats-section hidden">
+    <div class="section-heading">
+        <h2>By The Numbers</h2>
+        <p>
+            A snapshot of my journey as a developer and technology professional.
+        </p>
+    </div>
 
-                  <h3>Portfolio Website</h3>
-                    <p>
-                        Designed and developed a responsive portfolio website focused on accessibility, 
-                        clean UI, and showcasing software development projects.
-                    </p>
+    <div class="stats-grid">
+        <article class="stat-card">
+            <i class="fas fa-laptop-code" aria-hidden="true"></i>
+            <h3 class="counter" data-target="12">0</h3>
+            <p>Projects Completed</p>
+        </article>
 
-                  <div class="tech-tags">
-                      <span>HTML</span>
-                      <span>CSS</span>
-                      <span>JavaScript</span>
-                  </div>
+        <article class="stat-card">
+            <i class="fas fa-briefcase" aria-hidden="true"></i>
+            <h3 class="counter" data-target="15">0</h3>
+            <p>Years at MTN</p>
+        </article>
 
-                  <div class="project-buttons">
-                      <a href="#" class="btn">Live Demo</a>
-                      <a href="#" class="btn btn-outline">GitHub</a>
-                  </div>
-              </div>
-          </article>
-      </div>
+        <article class="stat-card">
+            <i class="fas fa-code" aria-hidden="true"></i>
+            <h3 class="counter" data-target="8">0</h3>
+            <p>Technologies</p>
+        </article>
 
-  </section>
-</section> 
+        <article class="stat-card">
+            <i class="fas fa-mug-hot" aria-hidden="true"></i>
+            <h3>∞</h3>
+            <p>Cups of Coffee</p>
+        </article>
+    </div>
+</section>
 
-  <footer>
+  <!--CTA Section-->
+    <section class="cta-section">
+        <h2>Let's Build Something Amazing Together</h2>
+        <p>Whether you need a responsive website, frontend development, or a creative solution, 
+            I'd love to hear from you.</p>
+
+        <a href="Contact.html" class="btn">
+            Contact Me
+        </a>
+    </section>
+
+</main>
+
+<!--Footer Section-->
+ <footer>
+    <div class="footer-container">
+        <div class="footer-brand">
+            <img src="images/Logo.webp" loading="lazy"
+            decoding="async"
+                alt="Preso.dev Logo">
+        </div>
+        
+         <div class="footer-links">
+            <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="Projects.html">Projects</a>
+                <a href="About.html">About</a>
+                <a href="Contact.html">Contact</a>
+        </div>
+            <div class="brand-text">
+                <h2>Preso.dev</h2>
+                <p> Building responsive, modern and accessible web applications.</p>
+            </div>
+        </div>
+
+<!-- Social icons -->
+    <div class="footer-social">
+        <h3>Connect</h3>
+        <div class = "social-links">
+            <a href="https://www.linkedin.com/in/presley-tempies-167795125/" target="_blank"
+            rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin"></i>
+            </a>
+        
+            <a href="https://www.instagram.com/preso162/" target="_blank"
+            rel="noopener noreferrer">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="https://www.facebook.com/preso162" target="_blank"
+            rel="noopener noreferrer">
+                <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+            </a>
+
+            <a href="https://github.com/Preso162/" target="_blank"
+            rel="noopener noreferrer">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
+        </div>
+    </div>
     <hr>
-      <br>
-      Copyright &copy; 2025 All Rights Reserved
-      <a href="https://github.com/Preso162" target="_blank">Presley Tempies</a> - Powered by Caution162
-  
-  </footer>
+    <p class="copyright"> © 2026 Presley Tempies</p>
+</footer>
     <script src="js/script.js"></script>
   </body>
 </html>
