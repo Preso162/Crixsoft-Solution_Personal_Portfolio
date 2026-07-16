@@ -3,200 +3,265 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Preso.dev</title>
+    <title>Presley Tempies | Frontend Developer | Java Developer</title>
+    <meta name="description" content="Portfolio of Presley Tempies, Frontend Developer specialising in HTML, CSS, JavaScript and Java.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <script src="https://kit.fontawesome.com/22558ed83e.js" crossorigin="anonymous"></script>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="images/favicon-180x180.png">
+    <link rel="icon" type="images/favicon" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="images/favicon" sizes="16x16" href="images/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
-    <link rel="script" href="script.js">
     <link rel ="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
   </head>
-  <body>
-   <header>
 
-  <nav>
-      <div id="navbar">
-        <div class="logo">
-          <h2><a href="https://github.com/Preso162" target="_blank">Preso.dev</a></h2>
+  <body>
+    <!--Progress Bar-->
+    <div id="react-bar">
+    </div>
+    <div class="scroll-progress">
+    </div>
+
+  <header class="site-header">
+    <nav class=" navbar container">
+      <div class="logo">
+             <a href="index.html">
+                <img src="images/Logo.webp" loading="lazy"
+                decoding="async" alt="Preso.dev home"
+                width:160
+                height60>
+            </a>
         </div>
 
-        <label class="hamburger">
-          <input type="checkbox" id="menuToggle">
-          <svg viewBox="0 0 32 32">
-              <path class="line line-top-bottom"
-              d="M27 10 13 10C10.8 10 9 8.2 9 6 9 3.5 10.8 2 13 2 15.2 2 17 3.8 17 6L17 26C17 28.2 18.8 30 21 30 23.2 30 25 28.2 25 26 25 23.8 23.2 22 21 22L7 22">
-              </path>
-              <path class="line"
-              d="M7 16 27 16">
-              </path>
-          </svg>
-        </label>
-
-        <ul id="navitems">
+        <ul class="navitems">
             <li><a href="index.html" class="nav-btn active">Home</a></li>
             <li><a href="About.html" class="nav-btn">About</a></li>
             <li><a href="Projects.html" class="nav-btn">Projects</a></li>
             <li><a href="Contact.html" class="nav-btn">Contact</a></li>
         </ul>
-      </div>
     </nav>
+  </header>
 
-</header>
-  <!--Projects Section-->
-    <section class="projects-section" id="projects">
-      <h2><span>My Projects</span></h2>
-        <div class = "projects">
-            <p>Here’s a selection of my recent work.</p> 
-            <p>Each project reflects my commitment to thoughtful design, clean development, 
-            and creating user‑centric digital experiences.</p>
-            <p>From interface mockups to live builds, these projects showcase my approach to problem‑solving and my passion for 
-            crafting modern, polished digital products.</p>
-          </div>
+<main>
+  <!--Featured Projects Section-->
+    <section class="projects-section hidden">
+        <div class="section-heading">
+            <span class="section-tag">My Work</span>
+                <h2>Featured Projects</h2>
+                <p> A selection of projects that demonstrate my frontend development skills and passion for
+                    creating modern web applications.</p>
         </div>
 
-<div class="projects-cards">
-  <div class="projects-card-box">
-    <div class="projects-card-box_icons">
-      <i class="fa-solid fa-id-card"></i>
-    </div>
-    <div class="projects-card-box_desc">
-      <h4>eComm Website</h4>
-      <p>
-        A Business website crafted using HTML, CSS and JavaScript...
-      </p>
-    </div>
-    <div class="projects-card-box_buttons">
-      <button class="btn btn-dark-outlined">
-        <a href="ecom/eCommerce_website.html" target="_blank">
-          View Project <i class="fa-solid fa-suitcase"></i>
-        </a>
-      </button>
-    </div>
-  </div>
+         <div class="tech-stacks">
+                        <span>HTML5</span>
+                        <span>CSS3</span>
+                        <span>JavaScript</span>
+                    </div>
 
-  <div class="projects-card-box">
-    <div class="projects-card-box_icons">
-      <i class="fa-solid fa-suitcase"></i>
-    </div>
-    <div class="projects-card-box_desc">
-      <h4>Quiz Game</h4>
-      <p>
-        Developed a JavaScript quiz game with dynamic questions and scoring...
-      </p>
-    </div>
-    <div class="projects-card-box_buttons">
-      <button class="btn btn-dark-outlined">
-        <a href="Personal_Portfolio/Quiz_game/index.html" target="_blank">
-          <script src="Personal_Portfolio/Quiz_game/script.js" defer></script>
-          View Project <i class="fa-solid fa-suitcase"></i>
-        </a>
-      </button>
-    </div>
-  </div>
+                    <article class="style-card">
+                        <h3>Development Style</h3>
+                        <p> I enjoy building responsive, accessible and user-friendly applications while continually
+                            improving my skills.</p>
+                    </article>
+                    
+        <!-- PROJECT -->
+        <article class="project-card">
+            <div class="browser-frame">
+                <div class="browser-header">
+                    <div class="browser-buttons">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <span class="browser-title">
+                        Vehicle Rental System
+                    </span>
+                </div>
+                <img src="images/Rental App.webp" loading="lazy" 
+                decoding="async" alt="Vehicle Rental System">
+            </div>
+            <div class="project-content">
+                <div class="project-tags">
+                    <span>Java</span>
+                    <span>Swing</span>
+                    <span>OOP</span>
+                </div>
+                <h3>Vehicle Rental System</h3>
+                <p>Java Swing application for managing vehicle reservations..</p>
+                <div class="project-buttons">
+                    <a href="projects.html" class="btn"> Live Demo</a>
+                    <a href="https://github.com/Preso162/" class="btn btn-outline">GitHub</a>
+                </div>
+            </div>
+        </article>
 
-  <div class="projects-card-box">
-    <div class="projects-card-box_icons">
-      <i class="fa-solid fa-suitcase"></i>
-    </div>
-    <div class="projects-card-box_desc">
-      <h4>Fast-food Registry</h4>
-      <p>
-        Developed a Java app for a food registry...
-      </p>
-    </div>
-    <div class="projects-card-box_buttons">
-      <button class="btn btn-dark-outlined">
-        <a href="eCommerce_website.html" target="_blank">
-          View Project <i class="fa-solid fa-suitcase"></i>
-        </a>
-      </button>
-    </div>
-  </div>
+        <article class="project-card">
+            <div class="browser-frame">
+                <div class="browser-header">
+                    <div class="browser-buttons">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <span class="browser-title">
+                        Fast-Food Registry System
+                    </span>
+                </div>
+                <img src="images/Fast Food App.webp" 
+                loading="lazy" 
+                decoding="async" 
+                alt="Vehicle Rental System">
+            </div>
 
-  <div class="projects-card-box">
-    <div class="projects-card-box_icons">
-      <i class="fa-solid fa-id-card"></i>
-    </div>
-    <div class="projects-card-box_desc">
-      <h4>Sign-in Page</h4>
-      <p>
-        A sleek sign-in page designed using HTML, CSS and JavaScript...
-      </p>
-    </div>
-    <div class="projects-card-box_buttons">
-      <button class="btn btn-dark-outlined">
-        <a href="Account.html" target="_blank">
-          View Project <i class="fa-solid fa-id-card"></i>
-        </a>
-      </button>
-    </div>
-  </div>
+            <div class="project-content">
+                <div class="project-tags">
+                    <span>Java</span>
+                    <span>Swing</span>
+                    <span>OOP</span>
+                </div>
+                <h3>Fast-Food registry System</h3>
+                <p>Java Swing application for managing food orders.</p>
+                <div class="project-buttons">
+                    <a href="projects.html" class="btn"> Live Demo</a>
+                    <a href="https://github.com/Preso162/" class="btn btn-outline">GitHub</a>
+                </div>
+            </div>
+        </article>
 
+        <article class="project-card">
+            <div class="browser-frame">
+                <div class="browser-header">
+                    <div class="browser-buttons">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <span class="browser-title">
+                        Kid's clothing Ecommerce store
+                    </span>
+                </div>
+                <img src="images/eComm.webp" loading="lazy" 
+                decoding="async" alt="Vehicle Rental System">
+            </div>
+            <div class="project-content">
+                <div class="project-tags">
+                    <span>HTML</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                </div>
+                <h3>Kid's clothing Ecommerce store</h3>
+                <p>Ecommerce clothing platform offering a variety of clothing options for todlers.</p>
+                <div class="project-buttons">
+                    <a href="projects" class="btn"> Live Demo</a>
+                    <a href="https://github.com/Preso162/" class="btn btn-outline">GitHub</a>
+                </div>
+            </div>
+        </article>
+
+        <article class="project-card">
+            <div class="browser-frame">
+                <div class="browser-header">
+                    <div class="browser-buttons">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <span class="browser-title">
+                        To Do App
+                    </span>
+                </div>
+                <img src="images/To Do App.webp" loading="lazy" 
+                decoding="async" alt="Vehicle Rental System">
+            </div>
+            <div class="project-content">
+                <div class="project-tags">
+                    <span>HTML</span>
+                    <span>CSS3</span>
+                    <span>JavaScript</span>
+                </div>
+                <h3>Creative To Do App</h3>
+                <p>An attractive To Do app that allows you to manage your everyday tasks.</p>
+                <div class="project-buttons">
+                    <a href="projects.html" class="btn"> Live Demo</a>
+                    <a href="https://github.com/Preso162/" class="btn btn-outline">GitHub</a>
+                </div>
+            </div>
+        </article>
+
+        <article>
+            <div class="project-content">
+
+                <div class="project-learnings">
+                    <h4>What I Learned</h4>
+                    <ul>
+                        <li>Responsive CSS Grid</li>
+                        <li>Intersection Observer API</li>
+                        <li>Reusable Components</li>
+                        <li>Performance Optimisation</li>
+                    </ul>
+                </div>
+                
+                <div class="project-story">
+                    <h4>Why I Built It</h4>
+                    <p>To create a professional onlinepresence while improving my frontend development 
+                        skills through real-world practice.</p>
+                </div>
+            </div>
+        </article>
     </section>
-
-    <footer>
-    <hr>
-      <br>
-      Copyright &copy; 2025 All Rights Reserved
-      <a href="https://github.com/Preso162" target="_blank">Presley Tempies</a> - Powered by Caution162
-        <br>
-    <div class = "media-login-mod">
-        <div class = "mediacontainer">
-          <div class = "mod media-mod-1-1">
-            <a href="https://www.linkedin.com/in/presley-tempies-167795125/">
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
+</main>
+<!--Footer Section-->
+ <footer>
+    <div class="footer-container">
+        <div class="footer-brand">
+            <img src="images/Logo.webp" loading="lazy" 
+                decoding="async" alt="Preso.dev Logo">
         </div>
-
-            <div class = "mod media-mod-1">
-              <i class="fa-brands fa-linkedin"></i>
-            </div>
-          </div>
         
-       <div class = "mediacontainer">
-          <div class = "mod media-mod-2-2">
-            <a href="https://www.instagram.com/preso162/">
-              <i class="fa-brands fa-instagram"></i>
-            </a>
-          </div>
-
-            <div class = "mod media-mod-2">
-              <i class="fa-brands fa-instagram"></i>
+         <div class="footer-links">
+            <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="Projects.html">Projects</a>
+                <a href="About.html">About</a>
+                <a href="Contact.html">Contact</a>
+        </div>
+            <div class="brand-text">
+                <h2>Preso.dev</h2>
+                <p> Building responsive, modern and accessible web applications.</p>
             </div>
-          </div>
-
-        <div class = "mediacontainer">
-          <div class = "mod media-mod-3-3">
-            <a href = "https://www.facebook.com/preso162">
-              <i class="fa-brands fa-facebook"></i>
-            </a>
-          </div>
-
-          <div class = "mod media-mod-3">
-            <i class="fa-brands fa-facebook"></i>
-          </div>
         </div>
 
-        <div class = "mediacontainer">
-          <div class = "mod media-mod-4-4">
-            <a href = "https://github.com/Preso162/">
-              <i class="fa-brands fa-github"></i>
+<!-- Social icons -->
+    <div class="footer-social">
+        <h3>Connect</h3>
+        <div class = "social-links">
+            <a href="https://www.linkedin.com/in/presley-tempies-167795125/" target="_blank"
+            rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin"></i>
             </a>
-          </div>
+        
+            <a href="https://www.instagram.com/preso162/" target="_blank"
+            rel="noopener noreferrer">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
 
-        <div class = "mod media-mod-4">
-          <i class="fa-brands fa-github"></i>
+            <a href="https://www.facebook.com/preso162" target="_blank"
+            rel="noopener noreferrer">
+                <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+            </a>
+
+            <a href="https://github.com/Preso162/" target="_blank"
+            rel="noopener noreferrer">
+                <i class="fa-brands fa-github" aria-hidden="true"></i>
+            </a>
         </div>
-      </div>
     </div>
-
-  </footer>
+    <hr>
+    <p class="copyright"> © 2026 Presley Tempies</p>
+</footer>
     <script src="js/script.js"></script>
   </body>
 </html>
